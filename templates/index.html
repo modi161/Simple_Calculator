@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block head  %}
+
+{% endblock %}
+
+
+{% block body  %}
+<h1>Calculator</h1>
+
+
+<form method = "POST">
+
+
+<input type = "text" name = "num1" placeholder = "Enter the first number">
+<input type = "text" name = "num2" placeholder = "Enter the second number">
+
+<button type = "submit" name = "operation" value = "add">Add</button> 
+<button type = "submit" name = "operation" value = "add" >Subtract/</button> 
+<button type = "submit" name = "operation" value = "add" >Multiply</button> 
+<button type = "submit" name = "operation" value = "add" >Divide</button> 
+
+
+</form>
+
+{%if result%}
+    <h2>Result: {{result}}</h2>
+{%endif%}
+
+
+
+
+
+
+
+
+{% endblock %}
